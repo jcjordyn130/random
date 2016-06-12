@@ -1,0 +1,15 @@
+#!/bin/bash
+# rsg (Random Stuff Generator)
+# Licensed under the GPLv2
+
+if [ "$1" == "" ]
+then
+ echo "Error: No sleep time specified"
+ exit 1
+fi
+
+for (( ; ; ))
+do
+echo $RANDOM
+sleep $1
+done
